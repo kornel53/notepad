@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notatnik</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="lineWrapMode">
+       <enum>QPlainTextEdit::NoWrap</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNotepad">
+    <property name="title">
+     <string>&amp;Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtw_rz"/>
+    <addaction name="actionZapisz"/>
+    <addaction name="actionZapisz_jako"/>
+    <addaction name="separator"/>
+    <addaction name="actionZako_cz"/>
+   </widget>
+   <widget class="QMenu" name="menuEdycja">
+    <property name="title">
+     <string>&amp;Edycja</string>
+    </property>
+    <addaction name="actionWytnij"/>
+    <addaction name="actionKopiuj"/>
+    <addaction name="actionWklej"/>
+    <addaction name="separator"/>
+    <addaction name="actionCofnij"/>
+    <addaction name="actionPrzywr"/>
+   </widget>
+   <widget class="QMenu" name="menu_Formatowanie">
+    <property name="title">
+     <string>&amp;Formatowanie</string>
+    </property>
+    <addaction name="actionZ_awijanie_wierszy"/>
+    <addaction name="action_Czcionka"/>
+   </widget>
+   <widget class="QMenu" name="menuP_moc">
+    <property name="title">
+     <string>P&amp;omoc</string>
+    </property>
+    <addaction name="actionO_programie"/>
+   </widget>
+   <addaction name="menuNotepad"/>
+   <addaction name="menuEdycja"/>
+   <addaction name="menu_Formatowanie"/>
+   <addaction name="menuP_moc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNowy">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Nowy</string>
+   </property>
+  </action>
+  <action name="actionOtw_rz">
+   <property name="text">
+    <string>&amp;Otwórz</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="text">
+    <string>Za&amp;pisz</string>
+   </property>
+  </action>
+  <action name="actionZapisz_jako">
+   <property name="text">
+    <string>Zapi&amp;sz jako...</string>
+   </property>
+  </action>
+  <action name="actionZako_cz">
+   <property name="text">
+    <string>Zakoń&amp;cz</string>
+   </property>
+  </action>
+  <action name="actionWytnij">
+   <property name="text">
+    <string>W&amp;ytnij</string>
+   </property>
+  </action>
+  <action name="actionKopiuj">
+   <property name="text">
+    <string>Kop&amp;iuj</string>
+   </property>
+  </action>
+  <action name="actionWklej">
+   <property name="text">
+    <string>Wkle&amp;j</string>
+   </property>
+  </action>
+  <action name="actionZ_awijanie_wierszy">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Z&amp;awijanie wierszy</string>
+   </property>
+  </action>
+  <action name="action_Czcionka">
+   <property name="text">
+    <string>&amp;Czcionka</string>
+   </property>
+  </action>
+  <action name="actionCofnij">
+   <property name="text">
+    <string>&amp;Cofnij</string>
+   </property>
+  </action>
+  <action name="actionPrzywr">
+   <property name="text">
+    <string>Przy&amp;wróć</string>
+   </property>
+  </action>
+  <action name="actionO_programie">
+   <property name="text">
+    <string>O p&amp;rogramie</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,2 +1,2 @@
 # notepad
-Simple text editor
+Simple text editor made in QT 5.5.1
