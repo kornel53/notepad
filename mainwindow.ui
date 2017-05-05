@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>600</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,7 +32,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>600</width>
      <height>28</height>
     </rect>
    </property>
@@ -76,46 +76,110 @@
    <addaction name="menu_Formatowanie"/>
    <addaction name="menuP_moc"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNowy"/>
+   <addaction name="actionOtw_rz"/>
+   <addaction name="actionZapisz"/>
+   <addaction name="actionZapisz_jako"/>
+   <addaction name="separator"/>
+   <addaction name="action_Czcionka"/>
+   <addaction name="separator"/>
+   <addaction name="actionWytnij"/>
+   <addaction name="actionKopiuj"/>
+   <addaction name="actionWklej"/>
+   <addaction name="separator"/>
+   <addaction name="actionCofnij"/>
+   <addaction name="actionPrzywr"/>
+   <addaction name="separator"/>
+   <addaction name="actionO_programie"/>
+   <addaction name="separator"/>
+   <addaction name="actionZako_cz"/>
+  </widget>
   <action name="actionNowy">
    <property name="enabled">
     <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/new.png</normaloff>:/rec/img/new.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Nowy</string>
    </property>
   </action>
   <action name="actionOtw_rz">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/open.png</normaloff>:/rec/img/open.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Otwórz</string>
    </property>
   </action>
   <action name="actionZapisz">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/save.png</normaloff>:/rec/img/save.png</iconset>
+   </property>
    <property name="text">
     <string>Za&amp;pisz</string>
    </property>
   </action>
   <action name="actionZapisz_jako">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/save-as.png</normaloff>:/rec/img/save-as.png</iconset>
+   </property>
    <property name="text">
     <string>Zapi&amp;sz jako...</string>
    </property>
   </action>
   <action name="actionZako_cz">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/close.png</normaloff>:/rec/img/close.png</iconset>
+   </property>
    <property name="text">
     <string>Zakoń&amp;cz</string>
    </property>
   </action>
   <action name="actionWytnij">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/cut.png</normaloff>:/rec/img/cut.png</iconset>
+   </property>
    <property name="text">
     <string>W&amp;ytnij</string>
    </property>
   </action>
   <action name="actionKopiuj">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/copy.png</normaloff>:/rec/img/copy.png</iconset>
+   </property>
    <property name="text">
     <string>Kop&amp;iuj</string>
    </property>
   </action>
   <action name="actionWklej">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/paste.png</normaloff>:/rec/img/paste.png</iconset>
+   </property>
    <property name="text">
     <string>Wkle&amp;j</string>
    </property>
@@ -129,27 +193,45 @@
    </property>
   </action>
   <action name="action_Czcionka">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/font.png</normaloff>:/rec/img/font.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Czcionka</string>
    </property>
   </action>
   <action name="actionCofnij">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/undo.png</normaloff>:/rec/img/undo.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Cofnij</string>
    </property>
   </action>
   <action name="actionPrzywr">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/redo.png</normaloff>:/rec/img/redo.png</iconset>
+   </property>
    <property name="text">
     <string>Przy&amp;wróć</string>
    </property>
   </action>
   <action name="actionO_programie">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/img/info.png</normaloff>:/rec/img/info.png</iconset>
+   </property>
    <property name="text">
     <string>O p&amp;rogramie</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
