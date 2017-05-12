@@ -7,13 +7,13 @@
 #include <aboutdialog.h>
 #include <QFontDialog>
 #include <QFont>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     setCentralWidget(ui->plainTextEdit);
-
 }
 
 MainWindow::~MainWindow()
@@ -116,7 +116,17 @@ void MainWindow::on_action_Czcionka_triggered()
     QFont font = QFontDialog::getFont(&ok,this);
     if(ok)
     {
-        ui->plainTextEdit->setFont(font);
+        QTextCursor cursor = ui->plainTextEdit->textCursor();
+        QTextCharFormat format = cursor.charFormat();
+        if(cursor.selectedText()=="")
+        {
+            ui->plainTextEdit->setFont(font);
+        }
+        else
+        {
+        format.setFont(font);
+        cursor.setCharFormat(format);
+        }
     }else return;
 }
 
