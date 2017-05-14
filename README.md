@@ -1,5 +1,5 @@
 # Notepad
 
-###Simple text editor
+### Simple text editor
 
 *QT 5.5.1*
