@@ -7,6 +7,8 @@
 #include <aboutdialog.h>
 #include <QFontDialog>
 #include <QFont>
+#include <QKeySequence>
+#include <QShortcut>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -52,7 +54,7 @@ void MainWindow::on_actionZapisz_jako_triggered()
     QString filter = "Wszystkie pliki (*.*) ;; Dokument tekstowy (*.txt)";
     QString file_path = QFileDialog::getSaveFileName(this, "Zapisz jako...", QDir::homePath(),filter);
     QFile file(file_path);
-    filename=file_path;
+    if(file_path!="") filename=file_path;
     if(file.open(QFile::WriteOnly | QFile::Text))
     {
         QTextStream out(&file);

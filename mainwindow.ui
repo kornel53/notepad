@@ -120,6 +120,9 @@
    <property name="text">
     <string>&amp;Nowy</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
   </action>
   <action name="actionOtw_rz">
    <property name="icon">
@@ -128,6 +131,9 @@
    </property>
    <property name="text">
     <string>&amp;Otwórz</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionZapisz">
@@ -138,6 +144,9 @@
    <property name="text">
     <string>Za&amp;pisz</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actionZapisz_jako">
    <property name="icon">
@@ -146,6 +155,9 @@
    </property>
    <property name="text">
     <string>Zapi&amp;sz jako...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actionZako_cz">
@@ -156,6 +168,9 @@
    <property name="text">
     <string>Zakoń&amp;cz</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
   </action>
   <action name="actionWytnij">
    <property name="icon">
@@ -164,6 +179,9 @@
    </property>
    <property name="text">
     <string>W&amp;ytnij</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
    </property>
   </action>
   <action name="actionKopiuj">
@@ -174,6 +192,9 @@
    <property name="text">
     <string>Kop&amp;iuj</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
   </action>
   <action name="actionWklej">
    <property name="icon">
@@ -182,6 +203,9 @@
    </property>
    <property name="text">
     <string>Wkle&amp;j</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
    </property>
   </action>
   <action name="actionZ_awijanie_wierszy">
@@ -209,6 +233,9 @@
    <property name="text">
     <string>&amp;Cofnij</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionPrzywr">
    <property name="icon">
@@ -218,6 +245,9 @@
    <property name="text">
     <string>Przy&amp;wróć</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
   </action>
   <action name="actionO_programie">
    <property name="icon">
@@ -226,6 +256,9 @@
    </property>
    <property name="text">
     <string>O p&amp;rogramie</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
    </property>
   </action>
  </widget>
