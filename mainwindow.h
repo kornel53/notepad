@@ -15,6 +15,9 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+    void closeEvent(QCloseEvent *event) override;
+
 private slots:
     void on_actionZ_awijanie_wierszy_toggled(bool arg1);
 
@@ -42,7 +45,13 @@ private slots:
 
     void on_actionO_programie_triggered();
 
+    void documentWasModified();
+
 private:
+
+    void setCurrentFile(const QString &fileName);
+    bool maybeSave();
+
     Ui::MainWindow *ui;
     QString filename;
 };

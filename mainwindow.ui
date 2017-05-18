@@ -20,9 +20,6 @@
       <property name="layoutDirection">
        <enum>Qt::LeftToRight</enum>
       </property>
-      <property name="lineWrapMode">
-       <enum>QPlainTextEdit::NoWrap</enum>
-      </property>
      </widget>
     </item>
    </layout>
